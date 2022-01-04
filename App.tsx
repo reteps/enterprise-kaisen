@@ -27,6 +27,8 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import { NavigationContainer } from '@react-navigation/native';
+
 const Section: React.FC<{
   title: string;
 }> = ({children, title}) => {
@@ -62,7 +64,7 @@ const App = () => {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
 
-  return (
+  const app = (
     <SafeAreaView style={backgroundStyle}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
       <ScrollView
@@ -75,7 +77,7 @@ const App = () => {
           }}>
           <Section title="Step One">
             Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
+            screen and then come back to see your edits. no way
           </Section>
           <Section title="See Your Changes">
             <ReloadInstructions />
@@ -91,6 +93,8 @@ const App = () => {
       </ScrollView>
     </SafeAreaView>
   );
+
+  return <NavigationContainer>{app}</NavigationContainer>
 };
 
 const styles = StyleSheet.create({
