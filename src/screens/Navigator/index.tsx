@@ -5,9 +5,9 @@ const Stack = createNativeStackNavigator()
 
 const Navigator = () => {
     return (
-        <Stack.Navigator>
-            <Stack.Screen name="AlgorithmStart" component={AlgorithmStart}/>
-        </Stack.Navigator>
+            <Stack.Navigator>
+                <Stack.Screen name="AlgorithmStart" component={AlgorithmStart}/>
+            </Stack.Navigator>
     )
 }
 
