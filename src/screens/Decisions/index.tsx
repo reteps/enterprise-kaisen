@@ -9,11 +9,11 @@ contains implementation of base screens
 */
 
 
-const Page1 = () => {
+const Page1 = ({ navigation }) => {
     const buttonContent = {
         button1To: "Page1", button2To: "Page1", button1Text: "New", button2Text: "Existing" 
     }
-    return <BaseDecision buttonContent={buttonContent}>
+    return <BaseDecision navigation={navigation} buttonContent={buttonContent}>
     <QuestionText>Is this a new situation, or
  an existing situation?</QuestionText>
 

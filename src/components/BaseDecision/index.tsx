@@ -6,7 +6,9 @@ const BaseDecision = ({ navigation, children, buttonOverride = null, buttonConte
     const { button1To, button2To, button1Text, button2Text } = (buttonContent || {})
     const buttons = buttonOverride || (
     <>
-    <TouchableOpacity onPress={() => navigation.navigate(button1To)}>
+    <TouchableOpacity onPress={() => {
+        navigation.navigate(button1To)
+    }}>
             <Text>{button1Text}</Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={() => navigation.navigate(button2To)}>
