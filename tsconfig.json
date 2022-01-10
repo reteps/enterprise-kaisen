@@ -41,7 +41,8 @@
     // "paths": {},                           /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
     "paths": {
       "screens/*": ["./src/screens/*"],
-      "components/*": ["./src/components/*"]
+      "components/*": ["./src/components/*"],
+      "assets/*": ["./src/assets/*"]
     },
     // "rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */
     // "typeRoots": [],                       /* List of folders to include type definitions from. */
