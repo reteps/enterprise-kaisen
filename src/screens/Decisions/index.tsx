@@ -23,7 +23,7 @@ const Situation = ({ navigation }) => {
 
 const SolutionNew = ({ navigation }) => {
     const buttonContent = {
-        button1To: "No", button2To: "InnovationMethod", button1Text: "Yes", button2Text: "ConditionKnown" 
+        button1To: "InnovationMethod", button2To: "ConditionKnown", button1Text: "No", button2Text: "Yes" 
     }
     return <BaseDecision navigation={navigation} buttonContent={buttonContent}>
     <QuestionText>Is there a known solution?</QuestionText>

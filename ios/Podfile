@@ -13,6 +13,8 @@ target 'enterprisekaisen' do
   )
 
 
+  pod 'react-native-orientation-locker', :path => '../node_modules/react-native-orientation-locker'
+
   target 'enterprisekaisenTests' do
     inherit! :complete
     # Pods for testing

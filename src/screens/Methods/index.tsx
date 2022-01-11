@@ -9,7 +9,7 @@ const InnovationMethod = ({ navigation }) => {
 }
 
 const DMADVMethod = ({ navigation }) => {
-    return <BaseMethod navigation={navigation} name='Innovation Method' next='DMADVDetail'>
+    return <BaseMethod navigation={navigation} name='DMADV' next='DMADVDetail'>
         <Text> dmadv content </Text>
     </BaseMethod>
 }

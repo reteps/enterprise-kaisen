@@ -9,17 +9,17 @@ const Styled = {
     `,
     PDF: styled(Pdf)`
         display: flex;
-        width: 300px;
-        height: 500px;
+        width: 100%;
+        height: 100%;
     `
 }
 
 const ConfusedScreen = ({ navigation }) => {
-    // const source = { uri: 'bundle-assets://slides/confused.pdf' }
-    const source = { uri: 'http://samples.leanpub.com/thereactnativebook-sample.pdf', cache: true };
+    const source = require('../../assets/pdfs/problem_solving_steps.pdf')
     return (
         <Styled.Container>
             <Styled.PDF source={source} 
+            horizontal={true}
             onLoadComplete={(numberOfPages,filePath) => {
                 console.log(`Number of pages: ${numberOfPages}`);
             }}
