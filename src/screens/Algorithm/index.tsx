@@ -4,7 +4,7 @@ import { Text, View, SafeAreaView, TouchableOpacity, Image } from 'react-native'
 import Button from 'components/Button'
 import BaseDecision from 'components/BaseDecision';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { faQuestion } from '@fortawesome/free-solid-svg-icons'
 
 const Styled = {
     Container: styled(View)`
@@ -29,11 +29,11 @@ const Styled = {
 
 const AlgorithmStart = ({ navigation }) => {
     const buttons = <>
-    <TouchableOpacity onPress={() => console.log("what")}>
-        <FontAwesomeIcon icon={ faCoffee } />
+    <TouchableOpacity onPress={() => navigation.navigate('Confused')}>
+        <FontAwesomeIcon icon={ faQuestion } />
         <Text>I'm confused</Text>
       </TouchableOpacity>
-        <TouchableOpacity onPress={() =>  navigation.navigate('Page1')}>
+        <TouchableOpacity onPress={() =>  navigation.navigate('Situation')}>
         <Text>Let's Go</Text>
       </TouchableOpacity>
     </>
