@@ -1,10 +1,11 @@
 import React from 'react'
-import { Text } from 'react-native'
+import AppText from 'components/AppText'
 import styled from 'styled-components/native'
 
 
-const QuestionText = styled(Text)`
+const QuestionText = styled(AppText)`
     font-size: 20px;
-    font-family: "Montserrat-Medium";
+    text-align: center;
+    margin-bottom: 10px;
 `
 export default QuestionText

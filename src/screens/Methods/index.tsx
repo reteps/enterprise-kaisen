@@ -1,45 +1,45 @@
 import React from 'react'
 import BaseMethod from 'components/BaseMethod'
-import { Text } from 'react-native'
+import AppText from 'components/AppText'
 
 const InnovationMethod = ({ navigation }) => {
     return <BaseMethod navigation={navigation} name='Innovation' next='InnovationDetail'>
-        <Text> innovation content </Text>
+        <AppText> innovation content </AppText>
     </BaseMethod>
 }
 
 const DMADVMethod = ({ navigation }) => {
     return <BaseMethod navigation={navigation} name='DMADV' next='DMADVDetail'>
-        <Text> dmadv content </Text>
+        <AppText> dmadv content </AppText>
     </BaseMethod>
 }
 
 const IDDOVMethod = ({ navigation }) => {
     return <BaseMethod navigation={navigation} name='IDDOV' next='IDDOVDetail'>
-        <Text> iddov content </Text>
+        <AppText> iddov content </AppText>
     </BaseMethod>
 }
 
 const EightDMethod = ({ navigation }) => {
     return <BaseMethod navigation={navigation} name='8D' next='EightDDetail'>
-        <Text> 8D content </Text>
+        <AppText> 8D content </AppText>
     </BaseMethod>
 }
 
 const SpecialMethod = ({ navigation }) => {
     return <BaseMethod navigation={navigation} name='Special Case' next='SpecialDetail'>
-        <Text> special content </Text>
+        <AppText> special content </AppText>
     </BaseMethod>
 }
 
 const DMAICMethod = ({ navigation }) => {
     return <BaseMethod navigation={navigation} name='DMAIC' next='DMAICDetail'>
-        <Text> dmaic content </Text>
+        <AppText> dmaic content </AppText>
     </BaseMethod>
 }
 const BBPMethod = ({ navigation }) => {
     return <BaseMethod navigation={navigation} name='BBP' next='BBPDetail'>
-        <Text> bbp content </Text>
+        <AppText> bbp content </AppText>
     </BaseMethod>
 }
 

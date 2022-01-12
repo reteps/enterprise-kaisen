@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components/native';
-import { Text, View, SafeAreaView, TouchableOpacity, Image } from 'react-native'
+import { View, SafeAreaView, TouchableOpacity, Image } from 'react-native'
 import Button from 'components/Button'
 import BaseDecision from 'components/BaseDecision';
 import QuestionText from 'components/QuestionText'
+import AppText from 'components/AppText';
 /*
 contains implementation of base screens
 */
@@ -53,13 +54,13 @@ const ConditionKnown = ({ navigation }) => {
 const ConditionUnknown = ({ navigation }) => {
     const buttons = <>
         <TouchableOpacity onPress={() =>  navigation.navigate('EightDMethod')}>
-        <Text>Deviation</Text>
+        <AppText>Deviation</AppText>
       </TouchableOpacity>
         <TouchableOpacity onPress={() =>  navigation.navigate('DMAICMethod')}>
-        <Text>Improvement</Text>
+        <AppText>Improvement</AppText>
       </TouchableOpacity>
         <TouchableOpacity onPress={() =>  navigation.navigate('SpecialMethod')}>
-        <Text>Deviation (special case)</Text>
+        <AppText>Deviation (special case)</AppText>
       </TouchableOpacity>
     </>
     return <BaseDecision navigation={navigation} buttonOverride={buttons}>
