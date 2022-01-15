@@ -98,7 +98,7 @@ const AlgorithmStart = ({ navigation }) => {
         <QuestionText>This app will ask you a series of 
     questions in order to determine 
     the best problem-solving method for your businesses problem. </QuestionText>
-        <Styled.Image source={require('assets/cat.jpeg')} />
+        <Styled.Image source={require('assets/images/algorithm_start.png')} />
     </BaseDecision>
 }
 export default AlgorithmStart
