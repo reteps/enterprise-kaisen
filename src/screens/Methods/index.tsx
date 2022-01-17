@@ -29,7 +29,7 @@ const Styled = {
 const InnovationMethod = ({ navigation }) => {
     return <BaseMethod navigation={navigation} name='Innovation' next='InnovationDetail'>
         <Styled.ImageContainer>
-        <Image style={styles.image} source={require('assets/content/INNOVATION_info.pdf.png')} />
+        <Image style={styles.image} source={require('assets/content/info_INNOVATION.pdf.png')} />
         </Styled.ImageContainer>
     </BaseMethod>
 }
@@ -37,7 +37,7 @@ const InnovationMethod = ({ navigation }) => {
 const DMADVMethod = ({ navigation }) => {
     return <BaseMethod navigation={navigation} name='DMADV' next='DMADVDetail'>
         <Styled.ImageContainer>
-        <Image style={styles.image} source={require('assets/content/DMADV_info.pdf.png')} />
+        <Image style={styles.image} source={require('assets/content/info_DMADV.pdf.png')} />
         </Styled.ImageContainer>
     </BaseMethod>
 }
@@ -45,7 +45,7 @@ const DMADVMethod = ({ navigation }) => {
 const IDDOVMethod = ({ navigation }) => {
     return <BaseMethod navigation={navigation} name='IDDOV' next='IDDOVDetail'>
         <Styled.ImageContainer>
-        <Image style={styles.image} source={require('assets/content/IDDOV_info.pdf.png')} />
+        <Image style={styles.image} source={require('assets/content/info_IDDOV.pdf.png')} />
         </Styled.ImageContainer>
     </BaseMethod>
 }
@@ -53,7 +53,7 @@ const IDDOVMethod = ({ navigation }) => {
 const EightDMethod = ({ navigation }) => {
     return <BaseMethod navigation={navigation} name='8D' next='EightDDetail'>
         <Styled.ImageContainer>
-        <Image style={styles.image} source={require('assets/content/8D_info.pdf.png')} />
+        <Image style={styles.image} source={require('assets/content/info_8D.pdf.png')} />
         </Styled.ImageContainer>
     </BaseMethod>
 }
@@ -61,14 +61,14 @@ const EightDMethod = ({ navigation }) => {
 const DMAICMethod = ({ navigation }) => {
     return <BaseMethod navigation={navigation} name='DMAIC' next='DMAICDetail'>
         <Styled.ImageContainer>
-        <Image style={styles.image} source={require('assets/content/DMAIC_info.pdf.png')} />
+        <Image style={styles.image} source={require('assets/content/info_DMAIC.pdf.png')} />
         </Styled.ImageContainer>
     </BaseMethod>
 }
 const BBPMethod = ({ navigation }) => {
     return <BaseMethod navigation={navigation} name='BBP' next='BBPDetail'>
         <Styled.ImageContainer>
-        <Image style={styles.image} source={require('assets/content/BBP_info.pdf.png')} />
+        <Image style={styles.image} source={require('assets/content/info_BBP.pdf.png')} />
         </Styled.ImageContainer>
     </BaseMethod>
 }
