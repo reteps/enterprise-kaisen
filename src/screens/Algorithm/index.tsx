@@ -18,16 +18,19 @@ const Styled = {
         background: blue;
         backgroundColor: blue;
     `,
+
     Image: styled(Image)`
         width: 100%;
         height: 50%;
     `,
+
     PrimaryButton: styled(TouchableOpacity)`
         background: #C13294;
         color: white;
         font-size: 20px;
         padding: 10px;
     `,
+    
     WhiteText: styled(AppText)`
         color: white;
     `,
@@ -97,7 +100,7 @@ const AlgorithmStart = ({ navigation }) => {
     return <BaseDecision navigation={navigation} buttonOverride={buttons}>
         <QuestionText>This app will ask you a series of 
     questions in order to determine 
-    the best problem-solving method for your businesses problem. </QuestionText>
+    the best problem-solving method for your business problem. </QuestionText>
         <Styled.Image source={require('assets/images/algorithm_start.png')} />
     </BaseDecision>
 }
